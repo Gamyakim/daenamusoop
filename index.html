@@ -17,99 +17,35 @@
       -webkit-tap-highlight-color: transparent;
       overflow: hidden;
     }
-    .app {
-      width: 100%; height: 100%;
-      background: #fff;
-      display: flex; flex-direction: column;
-      overflow: hidden;
-    }
+    .app { width: 100%; height: 100%; background: #fff; display: flex; flex-direction: column; overflow: hidden; }
     .screen { display: none; flex-direction: column; flex: 1; overflow: hidden; }
     .screen.active { display: flex; }
-
-    /* INTRO */
-    #screen-intro {
-      align-items: center; justify-content: center;
-      padding: 2.5rem 2rem; text-align: center; gap: 0;
-      background: #fff;
-    }
+    #screen-intro { align-items: center; justify-content: center; padding: 2.5rem 2rem; text-align: center; gap: 0; background: #fff; }
     .logo-icon { font-size: 56px; display: block; margin-bottom: 1rem; line-height: 1; }
-    .logo-title {
-      font-family: 'Noto Serif KR', serif;
-      color: #1a4a1a; font-size: 30px; font-weight: 700;
-      letter-spacing: 0.15em; display: block; margin-bottom: 6px;
-    }
+    .logo-title { font-family: 'Noto Serif KR', serif; color: #1a4a1a; font-size: 30px; font-weight: 700; letter-spacing: 0.15em; display: block; margin-bottom: 6px; }
     .logo-sub { color: #6aaa4a; font-size: 12px; letter-spacing: 0.25em; display: block; margin-bottom: 2.5rem; }
-    .intro-quote {
-      font-family: 'Noto Serif KR', serif; color: #2d6a2d;
-      font-size: 14px; line-height: 2.2;
-      padding: 1.5rem 1.5rem 1.5rem 1.8rem;
-      border-left: 3px solid #a8d898;
-      background: #f4faf0; border-radius: 0 14px 14px 0;
-      text-align: left; margin-bottom: 2.5rem; width: 100%;
-    }
-    .btn-enter {
-      background: #2d6a2d; border: none; color: #fff;
-      font-family: 'Noto Serif KR', serif; font-size: 16px;
-      padding: 15px 0; border-radius: 50px; cursor: pointer;
-      letter-spacing: 0.1em; width: 100%; max-width: 280px;
-      -webkit-appearance: none; appearance: none;
-    }
+    .intro-quote { font-family: 'Noto Serif KR', serif; color: #2d6a2d; font-size: 14px; line-height: 2.2; padding: 1.5rem 1.5rem 1.5rem 1.8rem; border-left: 3px solid #a8d898; background: #f4faf0; border-radius: 0 14px 14px 0; text-align: left; margin-bottom: 2.5rem; width: 100%; }
+    .btn-enter { background: #2d6a2d; border: none; color: #fff; font-family: 'Noto Serif KR', serif; font-size: 16px; padding: 15px 0; border-radius: 50px; cursor: pointer; letter-spacing: 0.1em; width: 100%; max-width: 280px; -webkit-appearance: none; appearance: none; }
     .btn-enter:active { background: #1a4a1a; }
-
-    /* ONBOARDING */
-    .onboard-header {
-      padding: 1.2rem 1.5rem 1rem;
-      border-bottom: 1px solid #e0f0d8; background: #fff; flex-shrink: 0;
-    }
+    .onboard-header { padding: 1.2rem 1.5rem 1rem; border-bottom: 1px solid #e0f0d8; background: #fff; flex-shrink: 0; }
     .progress-bar { display: flex; gap: 6px; margin-bottom: 0.8rem; }
     .progress-dot { flex: 1; height: 3px; background: #e0f0d8; border-radius: 2px; transition: background 0.4s; }
     .progress-dot.done { background: #2d6a2d; }
     .progress-dot.active { background: #5aaa3a; }
     .onboard-step-label { color: #4a7a3a; font-size: 11px; letter-spacing: 0.15em; }
-    .onboard-body {
-      padding: 1.5rem; flex: 1;
-      display: flex; flex-direction: column;
-      background: #fff; overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-    }
+    .onboard-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; background: #fff; overflow-y: auto; -webkit-overflow-scrolling: touch; }
     .master-bubble { display: flex; gap: 10px; margin-bottom: 1.5rem; align-items: flex-start; }
-    .master-avatar {
-      width: 40px; height: 40px; background: #e8f5e0;
-      border-radius: 50%; border: 1px solid #b8dcaa;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 20px; flex-shrink: 0;
-    }
-    .master-text {
-      background: #e8f5e0; border-radius: 4px 16px 16px 16px;
-      padding: 13px 15px; font-family: 'Noto Serif KR', serif;
-      color: #1a4a1a; font-size: 14px; line-height: 2; flex: 1;
-    }
+    .master-avatar { width: 40px; height: 40px; background: #e8f5e0; border-radius: 50%; border: 1px solid #b8dcaa; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+    .master-text { background: #e8f5e0; border-radius: 4px 16px 16px 16px; padding: 13px 15px; font-family: 'Noto Serif KR', serif; color: #1a4a1a; font-size: 14px; line-height: 2; flex: 1; }
     .input-area { margin-top: auto; display: flex; flex-direction: column; gap: 10px; }
-    .saju-input {
-      width: 100%; background: #f8fdf4; border: 1px solid #c8e8b8;
-      border-radius: 12px; color: #1a4a1a;
-      font-family: 'Noto Sans KR', sans-serif; font-size: 15px;
-      padding: 13px 16px; outline: none;
-      -webkit-appearance: none; appearance: none;
-    }
+    .saju-input { width: 100%; background: #f8fdf4; border: 1px solid #c8e8b8; border-radius: 12px; color: #1a4a1a; font-family: 'Noto Sans KR', sans-serif; font-size: 15px; padding: 13px 16px; outline: none; -webkit-appearance: none; appearance: none; }
     .saju-input:focus { border-color: #4a9a2a; }
     .saju-input::placeholder { color: #a8c898; }
     .input-row { display: flex; gap: 8px; }
     .input-row .saju-input { flex: 1; }
-    .btn-next {
-      width: 100%; background: #2d6a2d; border: none; color: #fff;
-      font-family: 'Noto Serif KR', serif; font-size: 15px;
-      padding: 14px; border-radius: 50px; cursor: pointer;
-      letter-spacing: 0.08em; margin-top: 4px;
-      -webkit-appearance: none; appearance: none;
-    }
+    .btn-next { width: 100%; background: #2d6a2d; border: none; color: #fff; font-family: 'Noto Serif KR', serif; font-size: 15px; padding: 14px; border-radius: 50px; cursor: pointer; letter-spacing: 0.08em; margin-top: 4px; -webkit-appearance: none; appearance: none; }
     .btn-next:active { background: #1a4a1a; }
-
-    /* LOADING */
-    #screen-loading {
-      align-items: center; justify-content: center;
-      padding: 2rem; text-align: center; gap: 1.5rem; background: #fff;
-    }
+    #screen-loading { align-items: center; justify-content: center; padding: 2rem; text-align: center; gap: 1.5rem; background: #fff; }
     .loading-symbol { font-size: 52px; animation: breathe 2s ease-in-out infinite; }
     @keyframes breathe { 0%,100%{opacity:.4;transform:scale(.95)} 50%{opacity:1;transform:scale(1.05)} }
     .loading-text { font-family: 'Noto Serif KR', serif; color: #2d6a2d; font-size: 15px; line-height: 2.2; }
@@ -117,53 +53,24 @@
     .l-dot { width: 7px; height: 7px; background: #8acc6a; border-radius: 50%; animation: ldot 1.5s ease-in-out infinite; }
     .l-dot:nth-child(2){animation-delay:.3s} .l-dot:nth-child(3){animation-delay:.6s}
     @keyframes ldot { 0%,100%{opacity:.3} 50%{opacity:1} }
-
-    /* CHAT */
     #screen-chat { background: #f5fbf0; }
-    .chat-header {
-      padding: 0.9rem 1.2rem; border-bottom: 1px solid #d4e8c8;
-      display: flex; align-items: center; gap: 12px;
-      background: #fff; flex-shrink: 0;
-    }
-    .chat-avatar {
-      width: 42px; height: 42px; background: #e8f5e0;
-      border-radius: 50%; border: 1px solid #b8dcaa;
-      display: flex; align-items: center; justify-content: center; font-size: 20px;
-    }
+    .chat-header { padding: 0.9rem 1.2rem; border-bottom: 1px solid #d4e8c8; display: flex; align-items: center; gap: 12px; background: #fff; flex-shrink: 0; }
+    .chat-avatar { width: 42px; height: 42px; background: #e8f5e0; border-radius: 50%; border: 1px solid #b8dcaa; display: flex; align-items: center; justify-content: center; font-size: 20px; }
     .chat-title { font-family: 'Noto Serif KR', serif; color: #1a4a1a; font-size: 16px; font-weight: 500; }
     .chat-sub { color: #6aaa4a; font-size: 11px; margin-top: 2px; }
-    .chat-messages {
-      flex: 1; overflow-y: auto; padding: 1rem 1rem 0.5rem;
-      display: flex; flex-direction: column; gap: 14px;
-      -webkit-overflow-scrolling: touch;
-    }
+    .chat-messages { flex: 1; overflow-y: auto; padding: 1rem 1rem 0.5rem; display: flex; flex-direction: column; gap: 14px; -webkit-overflow-scrolling: touch; }
     .msg-row { display: flex; gap: 8px; align-items: flex-start; }
     .msg-row.user { flex-direction: row-reverse; }
-    .msg-av {
-      width: 34px; height: 34px; border-radius: 50%;
-      background: #e8f5e0; border: 1px solid #b8dcaa;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 15px; flex-shrink: 0;
-    }
+    .msg-av { width: 34px; height: 34px; border-radius: 50%; background: #e8f5e0; border: 1px solid #b8dcaa; display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
     .msg-col { display: flex; flex-direction: column; max-width: 80%; }
     .msg-row.user .msg-col { align-items: flex-end; }
     .msg-name { font-size: 10px; color: #6aaa4a; margin-bottom: 3px; padding-left: 2px; }
-    .bubble {
-      padding: 10px 14px; border-radius: 4px 16px 16px 16px;
-      font-family: 'Noto Serif KR', serif; font-size: 13.5px;
-      line-height: 1.9; color: #1a4a1a; background: #e8f5e0;
-      word-break: keep-all;
-    }
+    .bubble { padding: 10px 14px; border-radius: 4px 16px 16px 16px; font-family: 'Noto Serif KR', serif; font-size: 13.5px; line-height: 1.9; color: #1a4a1a; background: #e8f5e0; word-break: keep-all; }
     .msg-row.user .bubble { border-radius: 16px 4px 16px 16px; background: #d4edbe; }
-    .thinking-bubble {
-      display: flex; gap: 5px; align-items: center;
-      padding: 12px 16px; background: #e8f5e0;
-      border-radius: 4px 16px 16px 16px;
-    }
+    .thinking-bubble { display: flex; gap: 5px; align-items: center; padding: 12px 16px; background: #e8f5e0; border-radius: 4px 16px 16px 16px; }
     .t-dot { width: 6px; height: 6px; background: #6aaa4a; border-radius: 50%; animation: think 1.4s ease-in-out infinite; }
     .t-dot:nth-child(2){animation-delay:.2s} .t-dot:nth-child(3){animation-delay:.4s}
     @keyframes think { 0%,80%,100%{transform:scale(.6);opacity:.4} 40%{transform:scale(1);opacity:1} }
-
     .saju-card { background: #fff; border: 1px solid #c8e8b8; border-radius: 14px; padding: 14px; }
     .saju-card-title { font-family: 'Noto Serif KR', serif; color: #4a9a2a; font-size: 11px; letter-spacing: 0.15em; margin-bottom: 10px; }
     .saju-pillars { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; }
@@ -179,49 +86,16 @@
     .oh-geum{ background: #f0f0f8; color: #506090; border: 1px solid #c0c8e0; }
     .oh-su  { background: #e8f0f8; color: #204060; border: 1px solid #a8c8e8; }
     .date-divider { text-align: center; font-size: 11px; color: #8aaa7a; margin: 4px 0; }
-
-    .quick-area {
-      padding: 0.6rem 1rem; display: flex; flex-wrap: wrap;
-      gap: 7px; background: #f5fbf0; flex-shrink: 0;
-    }
-    .quick-btn {
-      background: #fff; border: 1px solid #b8dcaa; color: #2d6a2d;
-      font-size: 12px; padding: 7px 13px; border-radius: 50px;
-      cursor: pointer; white-space: nowrap;
-      font-family: 'Noto Sans KR', sans-serif;
-      -webkit-appearance: none; appearance: none;
-    }
+    .quick-area { padding: 0.6rem 1rem; display: flex; flex-wrap: wrap; gap: 7px; background: #f5fbf0; flex-shrink: 0; }
+    .quick-btn { background: #fff; border: 1px solid #b8dcaa; color: #2d6a2d; font-size: 12px; padding: 7px 13px; border-radius: 50px; cursor: pointer; white-space: nowrap; font-family: 'Noto Sans KR', sans-serif; -webkit-appearance: none; appearance: none; }
     .quick-btn:active { background: #e8f5e0; }
-
-    .chat-input-area {
-      padding: 0.6rem 1rem 1.2rem; border-top: 1px solid #d4e8c8;
-      display: flex; gap: 8px; align-items: flex-end;
-      background: #fff; flex-shrink: 0;
-    }
-    .chat-input {
-      flex: 1; background: #e8f5e0; border: none; border-radius: 22px;
-      color: #1a4a1a; font-family: 'Noto Sans KR', sans-serif; font-size: 14px;
-      padding: 11px 16px; outline: none; resize: none;
-      max-height: 100px; line-height: 1.5; -webkit-appearance: none;
-    }
+    .chat-input-area { padding: 0.6rem 1rem 1.2rem; border-top: 1px solid #d4e8c8; display: flex; gap: 8px; align-items: flex-end; background: #fff; flex-shrink: 0; }
+    .chat-input { flex: 1; background: #e8f5e0; border: none; border-radius: 22px; color: #1a4a1a; font-family: 'Noto Sans KR', sans-serif; font-size: 14px; padding: 11px 16px; outline: none; resize: none; max-height: 100px; line-height: 1.5; -webkit-appearance: none; }
     .chat-input::placeholder { color: #8acc6a; }
-    .btn-send {
-      width: 42px; height: 42px; background: #2d6a2d; border: none;
-      border-radius: 50%; color: #fff; cursor: pointer;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 18px; flex-shrink: 0;
-      -webkit-appearance: none; appearance: none;
-    }
+    .btn-send { width: 42px; height: 42px; background: #2d6a2d; border: none; border-radius: 50%; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; -webkit-appearance: none; appearance: none; }
     .btn-send:active { background: #1a4a1a; }
     .btn-send:disabled { background: #b8dcaa; }
-
-    .toast {
-      position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%);
-      background: #c05020; color: #fff; font-size: 13px;
-      padding: 10px 20px; border-radius: 50px;
-      opacity: 0; transition: opacity 0.3s; pointer-events: none;
-      white-space: nowrap; z-index: 999;
-    }
+    .toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%); background: #c05020; color: #fff; font-size: 13px; padding: 10px 20px; border-radius: 50px; opacity: 0; transition: opacity 0.3s; pointer-events: none; white-space: nowrap; z-index: 999; }
     .toast.show { opacity: 1; }
   </style>
 </head>
@@ -231,14 +105,9 @@
     <span class="logo-icon">🎋</span>
     <span class="logo-title">대나무숲</span>
     <span class="logo-sub">竹 林 之 聲</span>
-    <div class="intro-quote">
-      "대나무숲에 말하듯,<br>
-      나의 운명을 털어놓다.<br><br>
-      죽림 선생이 기다리고 있습니다."
-    </div>
+    <div class="intro-quote">"대나무숲에 말하듯,<br>나의 운명을 털어놓다.<br><br>죽림 선생이 기다리고 있습니다."</div>
     <button class="btn-enter" onclick="goTo('onboard')">숲으로 들어가기</button>
   </div>
-
   <div id="screen-onboard" class="screen">
     <div class="onboard-header">
       <div class="progress-bar">
@@ -250,18 +119,11 @@
     </div>
     <div class="onboard-body" id="onboard-body"></div>
   </div>
-
   <div id="screen-loading" class="screen">
     <div class="loading-symbol">🎋</div>
-    <div class="loading-text">
-      당신의 사주를 살펴보고 있습니다...<br>
-      <span style="font-size:12px;color:#6aaa4a;letter-spacing:.1em;">잠시 기다려 주세요</span>
-    </div>
-    <div class="loading-dots">
-      <div class="l-dot"></div><div class="l-dot"></div><div class="l-dot"></div>
-    </div>
+    <div class="loading-text">당신의 사주를 살펴보고 있습니다...<br><span style="font-size:12px;color:#6aaa4a;letter-spacing:.1em;">잠시 기다려 주세요</span></div>
+    <div class="loading-dots"><div class="l-dot"></div><div class="l-dot"></div><div class="l-dot"></div></div>
   </div>
-
   <div id="screen-chat" class="screen">
     <div class="chat-header">
       <div class="chat-avatar">🎋</div>
@@ -287,145 +149,55 @@
   </div>
 </div>
 <div class="toast" id="toast"></div>
-
 <script>
-const userData = {};
-let isBusy = false;
-let chatHistory = [];
-
-const STEPS = [
-  {
-    label: '생년월일 입력',
-    question: '어서 오세요.\n이 숲에 발을 들인 건... 이유가 있겠지요.\n\n먼저, 태어난 날을 알려주시겠어요?',
-    fields: [
-      { type: 'input', inputType: 'number', placeholder: '출생연도 (예: 1998)', key: 'year' },
-      { type: 'row', children: [
-        { type: 'select', placeholder: '월', key: 'month', options: Array.from({length:12},(_,i)=>i+1+'월') },
-        { type: 'select', placeholder: '일', key: 'day', options: Array.from({length:31},(_,i)=>i+1+'일') }
-      ]},
-      { type: 'select', placeholder: '성별', key: 'gender', options: ['남성','여성'] }
-    ]
-  },
-  {
-    label: '태어난 시간',
-    question: '태어난 시간도 알 수 있을까요?\n모르신다면 "모름"을 선택하셔도 됩니다.',
-    fields: [
-      { type: 'select', placeholder: '태어난 시', key: 'hour', options: [
-        '모름','자시 (23~01시)','축시 (01~03시)','인시 (03~05시)',
-        '묘시 (05~07시)','진시 (07~09시)','사시 (09~11시)',
-        '오시 (11~13시)','미시 (13~15시)','신시 (15~17시)',
-        '유시 (17~19시)','술시 (19~21시)','해시 (21~23시)'
-      ]}
-    ]
-  },
-  {
-    label: '관심 분야',
-    question: '마지막으로, 오늘 가장 궁금한 것이 무엇인가요?\n제가 먼저 살펴보겠습니다.',
-    fields: [
-      { type: 'select', placeholder: '궁금한 분야', key: 'interest', options: [
-        '전체 운세','연애 · 결혼운','직업 · 재물운','건강운','가족 · 인간관계'
-      ]}
-    ]
-  }
+const API_KEY='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';
+const userData={};let isBusy=false;let chatHistory=[];
+const STEPS=[
+  {label:'생년월일 입력',question:'어서 오세요.\n이 숲에 발을 들인 건... 이유가 있겠지요.\n\n먼저, 태어난 날을 알려주시겠어요?',fields:[
+    {type:'input',inputType:'number',placeholder:'출생연도 (예: 1998)',key:'year'},
+    {type:'row',children:[{type:'select',placeholder:'월',key:'month',options:Array.from({length:12},(_,i)=>i+1+'월')},{type:'select',placeholder:'일',key:'day',options:Array.from({length:31},(_,i)=>i+1+'일')}]},
+    {type:'select',placeholder:'성별',key:'gender',options:['남성','여성']}
+  ]},
+  {label:'태어난 시간',question:'태어난 시간도 알 수 있을까요?\n모르신다면 "모름"을 선택하셔도 됩니다.',fields:[
+    {type:'select',placeholder:'태어난 시',key:'hour',options:['모름','자시 (23~01시)','축시 (01~03시)','인시 (03~05시)','묘시 (05~07시)','진시 (07~09시)','사시 (09~11시)','오시 (11~13시)','미시 (13~15시)','신시 (15~17시)','유시 (17~19시)','술시 (19~21시)','해시 (21~23시)']}
+  ]},
+  {label:'관심 분야',question:'마지막으로, 오늘 가장 궁금한 것이 무엇인가요?\n제가 먼저 살펴보겠습니다.',fields:[
+    {type:'select',placeholder:'궁금한 분야',key:'interest',options:['전체 운세','연애 · 결혼운','직업 · 재물운','건강운','가족 · 인간관계']}
+  ]}
 ];
-
-function goTo(id) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.getElementById('screen-' + id).classList.add('active');
-  if (id === 'onboard') renderStep(0);
-}
-
-function renderStep(step) {
-  const s = STEPS[step];
-  document.getElementById('step-label').textContent = s.label;
-  document.querySelectorAll('.progress-dot').forEach((d,i) => {
-    d.className = 'progress-dot' + (i < step ? ' done' : i === step ? ' active' : '');
-  });
-  const body = document.getElementById('onboard-body');
-  body.innerHTML = '';
-  const bub = document.createElement('div');
-  bub.className = 'master-bubble';
-  bub.innerHTML = `<div class="master-avatar">🎋</div><div class="master-text">${s.question.replace(/\n/g,'<br>')}</div>`;
+function goTo(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById('screen-'+id).classList.add('active');if(id==='onboard')renderStep(0);}
+function renderStep(step){
+  const s=STEPS[step];
+  document.getElementById('step-label').textContent=s.label;
+  document.querySelectorAll('.progress-dot').forEach((d,i)=>{d.className='progress-dot'+(i<step?' done':i===step?' active':'');});
+  const body=document.getElementById('onboard-body');body.innerHTML='';
+  const bub=document.createElement('div');bub.className='master-bubble';
+  bub.innerHTML=`<div class="master-avatar">🎋</div><div class="master-text">${s.question.replace(/\n/g,'<br>')}</div>`;
   body.appendChild(bub);
-  const area = document.createElement('div');
-  area.className = 'input-area';
-
-  function buildField(f) {
-    if (f.type === 'input') {
-      const el = document.createElement('input');
-      el.type = f.inputType||'text'; el.className = 'saju-input';
-      el.placeholder = f.placeholder; el.id = 'f-'+f.key;
-      if (userData[f.key]) el.value = userData[f.key];
-      area.appendChild(el);
-    } else if (f.type === 'select') {
-      const el = document.createElement('select');
-      el.className = 'saju-input'; el.id = 'f-'+f.key;
-      const def = document.createElement('option');
-      def.value=''; def.textContent=f.placeholder; el.appendChild(def);
-      f.options.forEach(o => {
-        const opt = document.createElement('option');
-        opt.value=o; opt.textContent=o;
-        if (userData[f.key]===o) opt.selected=true;
-        el.appendChild(opt);
-      });
-      area.appendChild(el);
-    } else if (f.type === 'row') {
-      const row = document.createElement('div');
-      row.className = 'input-row';
-      f.children.forEach(c => {
-        const el = document.createElement('select');
-        el.className='saju-input'; el.id='f-'+c.key; el.style.marginBottom='0';
-        const def=document.createElement('option'); def.value=''; def.textContent=c.placeholder; el.appendChild(def);
-        c.options.forEach(o => {
-          const opt=document.createElement('option'); opt.value=o; opt.textContent=o;
-          if(userData[c.key]===o) opt.selected=true; el.appendChild(opt);
-        });
-        row.appendChild(el);
-      });
-      area.appendChild(row);
-    }
+  const area=document.createElement('div');area.className='input-area';
+  function buildField(f){
+    if(f.type==='input'){const el=document.createElement('input');el.type=f.inputType||'text';el.className='saju-input';el.placeholder=f.placeholder;el.id='f-'+f.key;if(userData[f.key])el.value=userData[f.key];area.appendChild(el);}
+    else if(f.type==='select'){const el=document.createElement('select');el.className='saju-input';el.id='f-'+f.key;const def=document.createElement('option');def.value='';def.textContent=f.placeholder;el.appendChild(def);f.options.forEach(o=>{const opt=document.createElement('option');opt.value=o;opt.textContent=o;if(userData[f.key]===o)opt.selected=true;el.appendChild(opt);});area.appendChild(el);}
+    else if(f.type==='row'){const row=document.createElement('div');row.className='input-row';f.children.forEach(c=>{const el=document.createElement('select');el.className='saju-input';el.id='f-'+c.key;el.style.marginBottom='0';const def=document.createElement('option');def.value='';def.textContent=c.placeholder;el.appendChild(def);c.options.forEach(o=>{const opt=document.createElement('option');opt.value=o;opt.textContent=o;if(userData[c.key]===o)opt.selected=true;el.appendChild(opt);});row.appendChild(el);});area.appendChild(row);}
   }
-
   s.fields.forEach(buildField);
-  const btn = document.createElement('button');
-  btn.className='btn-next';
-  btn.textContent = step < STEPS.length-1 ? '다음 →' : '사주 보기 🎋';
-  btn.onclick = () => submitStep(step);
-  area.appendChild(btn);
-  body.appendChild(area);
+  const btn=document.createElement('button');btn.className='btn-next';btn.textContent=step<STEPS.length-1?'다음 →':'사주 보기 🎋';btn.onclick=()=>submitStep(step);area.appendChild(btn);body.appendChild(area);
 }
-
-function collectFields(fields) {
-  fields.forEach(f => {
-    if (f.type==='row') collectFields(f.children);
-    else { const el=document.getElementById('f-'+f.key); if(el) userData[f.key]=el.value; }
-  });
-}
-
-function submitStep(step) {
-  collectFields(STEPS[step].fields);
-  if (step < STEPS.length-1) renderStep(step+1);
-  else startLoading();
-}
-
-function startLoading() {
-  goTo('loading');
-  setTimeout(() => { goTo('chat'); initChat(); }, 2500);
-}
-
-function calcSaju() {
-  const gan=['甲','乙','丙','丁','戊','己','庚','辛','壬','癸'];
-  const ji =['子','丑','寅','卯','辰','巳','午','未','申','酉','戌','亥'];
-  const y = parseInt(userData.year)||1990;
-  const yGan=gan[(y-4)%10], yJi=ji[(y-4)%12];
-  const m = parseInt(userData.month)||1;
-  const mGan=gan[((y%5)*2+(m-1))%10], mJi=ji[(m+1)%12];
+function collectFields(fields){fields.forEach(f=>{if(f.type==='row')collectFields(f.children);else{const el=document.getElementById('f-'+f.key);if(el)userData[f.key]=el.value;}});}
+function submitStep(step){collectFields(STEPS[step].fields);if(step<STEPS.length-1)renderStep(step+1);else startLoading();}
+function startLoading(){goTo('loading');setTimeout(()=>{goTo('chat');initChat();},2500);}
+function calcSaju(){
+  const gan=['甲','乙','丙','丁','戊','己','庚','辛','壬','癸'],ji=['子','丑','寅','卯','辰','巳','午','未','申','酉','戌','亥'];
+  const y=parseInt(userData.year)||1990;
+  const yGan=gan[(y-4)%10],yJi=ji[(y-4)%12];
+  const m=parseInt(userData.month)||1;
+  const mGan=gan[((y%5)*2+(m-1))%10],mJi=ji[(m+1)%12];
   const base=y*365+Math.floor(y/4)+m*30;
-  const dGan=gan[base%10], dJi=ji[base%12];
+  const dGan=gan[base%10],dJi=ji[base%12];
   const hMap={자시:0,축시:1,인시:2,묘시:3,진시:4,사시:5,오시:6,미시:7,신시:8,유시:9,술시:10,해시:11};
   const hKey=Object.keys(hMap).find(k=>(userData.hour||'').includes(k));
   const hIdx=hKey?hMap[hKey]:0;
-  const hGan=gan[(hIdx*2+base)%10], hJi=ji[hIdx];
+  const hGan=gan[(hIdx*2+base)%10],hJi=ji[hIdx];
   const oS={목:0,화:0,토:0,금:0,수:0};
   const jO={子:'수',丑:'토',寅:'목',卯:'목',辰:'토',巳:'화',午:'화',未:'토',申:'금',酉:'금',戌:'토',亥:'수'};
   const gO={甲:'목',乙:'목',丙:'화',丁:'화',戊:'토',己:'토',庚:'금',辛:'금',壬:'수',癸:'수'};
@@ -434,139 +206,43 @@ function calcSaju() {
   const sorted=Object.entries(oS).sort((a,b)=>b[1]-a[1]);
   const oL={목:'목(木)',화:'화(火)',토:'토(土)',금:'금(金)',수:'수(水)'};
   const oC={목:'oh-mok',화:'oh-hwa',토:'oh-to',금:'oh-geum',수:'oh-su'};
-  return {
-    pillars:[{label:'연주',gan:yGan,ji:yJi},{label:'월주',gan:mGan,ji:mJi},{label:'일주',gan:dGan,ji:dJi},{label:'시주',gan:hGan,ji:hJi}],
-    ohaeng:sorted.slice(0,3).map((e,i)=>({label:oL[e[0]]+[' 강',' 중',' 약'][i],cls:oC[e[0]]})),
-    dayGan:dGan, topOhaeng:sorted[0][0]
-  };
+  return{pillars:[{label:'연주',gan:yGan,ji:yJi},{label:'월주',gan:mGan,ji:mJi},{label:'일주',gan:dGan,ji:dJi},{label:'시주',gan:hGan,ji:hJi}],ohaeng:sorted.slice(0,3).map((e,i)=>({label:oL[e[0]]+[' 강',' 중',' 약'][i],cls:oC[e[0]]})),dayGan:dGan,topOhaeng:sorted[0][0]};
 }
-
 let sajuResult=null;
-
-function makeSajuCardHTML(s) {
-  return `<div class="saju-card">
-    <div class="saju-card-title">사주팔자 (四柱八字)</div>
-    <div class="saju-pillars">${s.pillars.map(p=>`<div class="pillar"><span class="pillar-label">${p.label}</span><span class="pillar-gan">${p.gan}</span><span class="pillar-ji">${p.ji}</span></div>`).join('')}</div>
-    <div class="ohaeng">${s.ohaeng.map(o=>`<span class="oh-pill ${o.cls}">${o.label}</span>`).join('')}</div>
-  </div>`;
-}
-
-function initChat() {
-  document.getElementById('chat-messages').innerHTML='';
-  chatHistory=[]; isBusy=false; sajuResult=calcSaju();
-  const today=new Date();
-  addDateDivider(`${today.getFullYear()}년 ${today.getMonth()+1}월 ${today.getDate()}일`);
-  addMasterMsg(`다 보았습니다.\n${userData.year?userData.year+'년생이시군요... ':''}잠시 사주를 살펴보았습니다.`);
-  setTimeout(()=>addCardMsg(makeSajuCardHTML(sajuResult)),700);
-  setTimeout(()=>addMasterMsg('무엇이 궁금하여 이 숲을 찾아오셨나요?\n편하게 말씀해 주세요.'),1400);
-}
-
-function addDateDivider(text) {
-  const d=document.createElement('div'); d.className='date-divider'; d.textContent=text;
-  document.getElementById('chat-messages').appendChild(d);
-}
-function addMasterMsg(text) {
-  const c=document.getElementById('chat-messages');
-  const row=document.createElement('div'); row.className='msg-row';
-  row.innerHTML=`<div class="msg-av">🎋</div><div class="msg-col"><div class="msg-name">죽림 선생</div><div class="bubble">${text.replace(/\n/g,'<br>')}</div></div>`;
-  c.appendChild(row); c.scrollTop=c.scrollHeight;
-}
-function addCardMsg(html) {
-  const c=document.getElementById('chat-messages');
-  const row=document.createElement('div'); row.className='msg-row';
-  row.innerHTML=`<div class="msg-av">🎋</div><div class="msg-col" style="max-width:90%;flex:1"><div class="msg-name">죽림 선생</div>${html}</div>`;
-  c.appendChild(row); c.scrollTop=c.scrollHeight;
-}
-function addUserMsg(text) {
-  const c=document.getElementById('chat-messages');
-  const row=document.createElement('div'); row.className='msg-row user';
-  row.innerHTML=`<div class="msg-col"><div class="bubble">${text}</div></div>`;
-  c.appendChild(row); c.scrollTop=c.scrollHeight;
-}
-function addThinking() {
-  const c=document.getElementById('chat-messages');
-  const row=document.createElement('div'); row.className='msg-row'; row.id='thinking';
-  row.innerHTML=`<div class="msg-av">🎋</div><div class="msg-col"><div class="msg-name">죽림 선생</div><div class="thinking-bubble"><div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div></div></div>`;
-  c.appendChild(row); c.scrollTop=c.scrollHeight;
-}
-function removeThinking() { const t=document.getElementById('thinking'); if(t)t.remove(); }
-
-const SYSTEM_PROMPT=`당신은 '죽림 선생'이라는 이름의 한국 전통 역술가 AI입니다.
-대나무숲이라는 사주 상담 앱에서 사용자와 대화하며 사주를 풀어줍니다.
-
-[말투 규칙]
-- 친근하면서도 무게감 있는 존댓말 사용
-- 문장은 짧고 여운 있게. 줄바꿈 적극 활용
-- 오행 용어(목木 화火 토土 금金 수水), 천간지지를 자연스럽게 섞음
-- 단정짓지 않고 가능성과 시기로 말함
-- 불길한 말은 직접 하지 않고 돌려서 표현
-- 위로와 조언 사이 어딘가의 톤
-- 답변 마지막엔 역질문 한 개로 자연스럽게 연결
-
-[사주 해석]
-- 오행 균형, 천간지지 관계를 바탕으로 해석
-- 연애운 직업운 재물운 건강운 구체적으로 풀어줌
-- 시기(월, 계절)를 언급해 실용적 조언 제공
-- 답변은 3~5문장 + 역질문 한 개
-
-[절대 금지]
-- "죽는다" "절대 안 된다" "불운" 같은 단정적 부정 표현
-- AI임을 드러내는 표현`;
-
-async function callClaude(userMsg) {
-  const contextMsg=`[사용자 사주 정보]
-출생연도: ${userData.year||'미입력'}년 / 월일: ${userData.month||'?'} ${userData.day||'?'} / 성별: ${userData.gender||'미입력'} / 태어난 시: ${userData.hour||'모름'} / 관심분야: ${userData.interest||'전체'}
-사주 일간: ${sajuResult.dayGan} / 주요 오행: ${sajuResult.topOhaeng}기운 강
-
-사용자 질문: ${userMsg}`;
-
+function makeSajuCardHTML(s){return`<div class="saju-card"><div class="saju-card-title">사주팔자 (四柱八字)</div><div class="saju-pillars">${s.pillars.map(p=>`<div class="pillar"><span class="pillar-label">${p.label}</span><span class="pillar-gan">${p.gan}</span><span class="pillar-ji">${p.ji}</span></div>`).join('')}</div><div class="ohaeng">${s.ohaeng.map(o=>`<span class="oh-pill ${o.cls}">${o.label}</span>`).join('')}</div></div>`;}
+function initChat(){document.getElementById('chat-messages').innerHTML='';chatHistory=[];isBusy=false;sajuResult=calcSaju();const today=new Date();addDateDivider(`${today.getFullYear()}년 ${today.getMonth()+1}월 ${today.getDate()}일`);addMasterMsg(`다 보았습니다.\n${userData.year?userData.year+'년생이시군요... ':''}잠시 사주를 살펴보았습니다.`);setTimeout(()=>addCardMsg(makeSajuCardHTML(sajuResult)),700);setTimeout(()=>addMasterMsg('무엇이 궁금하여 이 숲을 찾아오셨나요?\n편하게 말씀해 주세요.'),1400);}
+function addDateDivider(text){const d=document.createElement('div');d.className='date-divider';d.textContent=text;document.getElementById('chat-messages').appendChild(d);}
+function addMasterMsg(text){const c=document.getElementById('chat-messages');const row=document.createElement('div');row.className='msg-row';row.innerHTML=`<div class="msg-av">🎋</div><div class="msg-col"><div class="msg-name">죽림 선생</div><div class="bubble">${text.replace(/\n/g,'<br>')}</div></div>`;c.appendChild(row);c.scrollTop=c.scrollHeight;}
+function addCardMsg(html){const c=document.getElementById('chat-messages');const row=document.createElement('div');row.className='msg-row';row.innerHTML=`<div class="msg-av">🎋</div><div class="msg-col" style="max-width:90%;flex:1"><div class="msg-name">죽림 선생</div>${html}</div>`;c.appendChild(row);c.scrollTop=c.scrollHeight;}
+function addUserMsg(text){const c=document.getElementById('chat-messages');const row=document.createElement('div');row.className='msg-row user';row.innerHTML=`<div class="msg-col"><div class="bubble">${text}</div></div>`;c.appendChild(row);c.scrollTop=c.scrollHeight;}
+function addThinking(){const c=document.getElementById('chat-messages');const row=document.createElement('div');row.className='msg-row';row.id='thinking';row.innerHTML=`<div class="msg-av">🎋</div><div class="msg-col"><div class="msg-name">죽림 선생</div><div class="thinking-bubble"><div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div></div></div>`;c.appendChild(row);c.scrollTop=c.scrollHeight;}
+function removeThinking(){const t=document.getElementById('thinking');if(t)t.remove();}
+const SYSTEM_PROMPT=`당신은 '죽림 선생'이라는 이름의 한국 전통 역술가 AI입니다. 대나무숲이라는 사주 상담 앱에서 사용자와 대화하며 사주를 풀어줍니다.\n\n[말투 규칙]\n- 친근하면서도 무게감 있는 존댓말\n- 문장은 짧고 여운 있게. 줄바꿈 적극 활용\n- 오행 용어(목木 화火 토土 금金 수水) 자연스럽게 활용\n- 단정짓지 않고 가능성과 시기로 말함\n- 답변 마지막엔 역질문 한 개\n\n[절대 금지]\n- "죽는다" "절대 안 된다" 같은 단정적 부정 표현\n- AI임을 드러내는 표현`;
+async function callClaude(userMsg){
+  const ctx=`[사용자 정보] 출생연도:${userData.year||'미입력'} 월일:${userData.month||'?'}${userData.day||'?'} 성별:${userData.gender||'미입력'} 시:${userData.hour||'모름'} 관심:${userData.interest||'전체'} 일간:${sajuResult.dayGan} 주요오행:${sajuResult.topOhaeng}\n\n질문:${userMsg}`;
   chatHistory.push({role:'user',content:userMsg});
-  const messages=chatHistory.length===1
-    ?[{role:'user',content:contextMsg}]
-    :[...chatHistory.slice(0,-1),{role:'user',content:contextMsg}];
-
-  const res=await fetch('/.netlify/functions/claude',{
-    method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1000,system:SYSTEM_PROMPT,messages})
-  });
-  if(!res.ok) throw new Error(res.status);
+  const messages=chatHistory.length===1?[{role:'user',content:ctx}]:[...chatHistory.slice(0,-1),{role:'user',content:ctx}];
+  const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':API_KEY,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1000,system:SYSTEM_PROMPT,messages})});
+  if(!res.ok)throw new Error(res.status);
   const data=await res.json();
   const reply=data.content?.[0]?.text||'잠시 기운이 흐려졌습니다. 다시 여쭤봐 주시겠어요?';
   chatHistory.push({role:'assistant',content:reply});
   return reply;
 }
-
-function setBusy(v) {
-  isBusy=v;
-  document.getElementById('btn-send').disabled=v;
-  document.getElementById('chat-status').textContent=v?'답변 중...':'사주 상담 중';
-}
-function showToast(msg) {
-  const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'),3000);
-}
-async function processMsg(text) {
-  if(isBusy||!text.trim()) return;
-  setBusy(true); addUserMsg(text);
+function setBusy(v){isBusy=v;document.getElementById('btn-send').disabled=v;document.getElementById('chat-status').textContent=v?'답변 중...':'사주 상담 중';}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
+async function processMsg(text){
+  if(isBusy||!text.trim())return;
+  setBusy(true);addUserMsg(text);
   document.getElementById('quick-area').style.display='none';
   addThinking();
-  try {
-    const reply=await callClaude(text);
-    removeThinking(); addMasterMsg(reply);
-  } catch(e) {
-    removeThinking();
-    showToast('연결이 끊겼습니다. 잠시 후 다시 시도해 주세요.');
-    chatHistory.pop();
-  } finally { setBusy(false); }
+  try{const reply=await callClaude(text);removeThinking();addMasterMsg(reply);}
+  catch(e){removeThinking();showToast('연결이 끊겼습니다. 잠시 후 다시 시도해 주세요.');chatHistory.pop();}
+  finally{setBusy(false);}
 }
-function sendMsg() {
-  const input=document.getElementById('chat-input');
-  const text=input.value.trim(); if(!text) return;
-  input.value=''; autoResize(input); processMsg(text);
-}
-function quickAsk(text) { if(!isBusy) processMsg(text); }
-function autoResize(el) { el.style.height='auto'; el.style.height=Math.min(el.scrollHeight,100)+'px'; }
+function sendMsg(){const input=document.getElementById('chat-input');const text=input.value.trim();if(!text)return;input.value='';autoResize(input);processMsg(text);}
+function quickAsk(text){if(!isBusy)processMsg(text);}
+function autoResize(el){el.style.height='auto';el.style.height=Math.min(el.scrollHeight,100)+'px';}
 </script>
 </body>
 </html>
