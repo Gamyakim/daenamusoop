@@ -150,7 +150,7 @@
 </div>
 <div class="toast" id="toast"></div>
 <script>
-const API_KEY='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';
+const API_KEY="REMOVED";
 const userData={};let isBusy=false;let chatHistory=[];
 const STEPS=[
   {label:'생년월일 입력',question:'어서 오세요.\n이 숲에 발을 들인 건... 이유가 있겠지요.\n\n먼저, 태어난 날을 알려주시겠어요?',fields:[
@@ -222,7 +222,7 @@ async function callClaude(userMsg){
   const ctx=`[사용자 정보] 출생연도:${userData.year||'미입력'} 월일:${userData.month||'?'}${userData.day||'?'} 성별:${userData.gender||'미입력'} 시:${userData.hour||'모름'} 관심:${userData.interest||'전체'} 일간:${sajuResult.dayGan} 주요오행:${sajuResult.topOhaeng}\n\n질문:${userMsg}`;
   chatHistory.push({role:'user',content:userMsg});
   const messages=chatHistory.length===1?[{role:'user',content:ctx}]:[...chatHistory.slice(0,-1),{role:'user',content:ctx}];
-  const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':API_KEY,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1000,system:SYSTEM_PROMPT,messages})});
+  const res=await fetch('/.netlify/functions/claude',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1000,system:SYSTEM_PROMPT,messages})});
   if(!res.ok)throw new Error(res.status);
   const data=await res.json();
   const reply=data.content?.[0]?.text||'잠시 기운이 흐려졌습니다. 다시 여쭤봐 주시겠어요?';
